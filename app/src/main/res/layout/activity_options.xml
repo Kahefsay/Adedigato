@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/background"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/background" />
+
+    <ImageView
+        android:id="@+id/panel"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/panel"
+        android:src="@drawable/panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <ImageButton
+        android:id="@+id/iconmusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="152dp"
+        android:background="@null"
+        android:contentDescription="@string/bouton_music"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iconmusic"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/iconsound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="30dp"
+        android:background="@null"
+        android:contentDescription="@string/bouton_music"
+        android:scaleType="centerCrop"
+        android:src="@drawable/iconsound"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconmusic" />
+
+    <SeekBar
+        android:id="@+id/seekbarmusic"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="10"
+        android:progress="10"
+        android:progressTint="@color/customgrey"
+        android:thumbTint="@color/customgrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iconmusic"
+        app:layout_constraintTop_toTopOf="@+id/iconmusic" />
+
+    <SeekBar
+        android:id="@+id/seekbarsound"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:max="10"
+        android:progress="10"
+        android:progressTint="@color/customgrey"
+        android:thumbTint="@color/customgrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/iconmusic"
+        app:layout_constraintTop_toTopOf="@+id/iconsound" />
+
+    <TextView
+        android:id="@+id/titreOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/options"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/panel"
+        app:layout_constraintStart_toStartOf="@+id/panel"
+        app:layout_constraintTop_toTopOf="@+id/panel" />
+
+    <ImageButton
+        android:id="@+id/iconclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        android:background="@null"
+        android:contentDescription="@string/close_button"
+        android:cropToPadding="false"
+        android:src="@drawable/iconclose"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/panel"
+        app:layout_constraintTop_toTopOf="@+id/panel" />
+
+    <TextView
+        android:id="@+id/difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/difficulty"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/iconsound"
+        app:layout_constraintTop_toBottomOf="@+id/iconsound" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/difficulty"
+        app:layout_constraintTop_toBottomOf="@+id/difficulty">
+
+        <RadioButton
+            android:id="@+id/easy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/customgrey"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/easy"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/customgrey"
+            android:checked="true"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/normal"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+        <RadioButton
+            android:id="@+id/hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/customgrey"
+            android:fontFamily="@font/roboto_mono_medium"
+            android:text="@string/hard"
+            android:textSize="18sp"
+            android:typeface="normal"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="319dp" />
+
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/background"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/panel"
+        android:src="@drawable/panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/titreAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/about"
+        android:textAllCaps="true"
+        android:textSize="36sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="@+id/panel"
+        app:layout_constraintStart_toStartOf="@+id/panel"
+        app:layout_constraintTop_toTopOf="@+id/panel" />
+
+    <TextView
+        android:id="@+id/aboutContent"
+        android:layout_width="200dp"
+        android:layout_height="388dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/aboutcontent"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/panel"
+        app:layout_constraintStart_toStartOf="@+id/panel"
+        app:layout_constraintTop_toBottomOf="@+id/titreAbout" />
+
+    <ImageButton
+        android:id="@+id/iconclose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:adjustViewBounds="false"
+        android:background="@null"
+        android:contentDescription="@string/close_button"
+        android:cropToPadding="false"
+        android:src="@drawable/iconclose"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/panel"
+        app:layout_constraintTop_toTopOf="@+id/panel" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    android:id="@+id/activityhome">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="false"
+        android:contentDescription="@string/background"
+        android:cropToPadding="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/boutonplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="380dp"
+        android:background="@null"
+        android:contentDescription="@string/bouton_jouer"
+        android:scaleType="fitXY"
+        android:src="@drawable/buttonlarge"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/boutonoptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:background="@null"
+        android:contentDescription="@string/bouton_options"
+        android:scaleType="fitXY"
+        android:src="@drawable/buttonsmall"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/boutonplay" />
+
+    <ImageButton
+        android:id="@+id/boutonabout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:background="@null"
+        android:contentDescription="@string/bouton_about"
+        android:scaleType="fitXY"
+        android:src="@drawable/buttonsmall"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/boutonplay" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/play"
+        android:textSize="36sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/boutonplay"
+        app:layout_constraintEnd_toEndOf="@+id/boutonplay"
+        app:layout_constraintStart_toStartOf="@+id/boutonplay"
+        app:layout_constraintTop_toTopOf="@+id/boutonplay" />
+
+    <TextView
+        android:id="@+id/options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/options"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/boutonoptions"
+        app:layout_constraintEnd_toEndOf="@+id/boutonoptions"
+        app:layout_constraintStart_toStartOf="@+id/boutonoptions"
+        app:layout_constraintTop_toTopOf="@+id/boutonoptions" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/about"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/boutonabout"
+        app:layout_constraintEnd_toEndOf="@+id/boutonabout"
+        app:layout_constraintStart_toStartOf="@+id/boutonabout"
+        app:layout_constraintTop_toTopOf="@+id/boutonabout" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/adedigato"
+        android:textAlignment="center"
+        android:textColor="@color/customgrey"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/boutonplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="0.39999998" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/v1_2_0"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintStart_toStartOf="@+id/background" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/sanri_2018_2019"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="© Sanri 2018-2019" />
+
+    <TextView
+        android:id="@+id/personnalbest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/personnal_best"
+        android:textAllCaps="true"
+        android:textColor="@color/customgrey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/previousscore"
+        app:layout_constraintStart_toStartOf="@+id/previousscore" />
+
+    <TextView
+        android:id="@+id/previousscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:text="@string/previous_score"
+        android:textAllCaps="true"
+        android:textColor="@color/customgrey"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/boutonplay"
+        app:layout_constraintStart_toStartOf="@+id/boutonplay" />
+
+</android.support.constraint.ConstraintLayout>

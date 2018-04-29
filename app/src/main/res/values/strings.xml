@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Adedigato</string>
+    <string name="background_home_view">background home view</string>
+    <string name="fond_bouton_accueil">fond bouton accueil</string>
+    <string name="bouton_jouer">bouton jouer</string>
+    <string name="bouton_options">bouton options</string>
+    <string name="bouton_about">bouton about</string>
+    <string name="home_titre">home titre</string>
+    <string name="fond_options">fond options</string>
+    <string name="bouton_music">bouton music</string>
+    <string name="background">background</string>
+    <string name="play">PLAY</string>
+    <string name="options">OPTIONS</string>
+    <string name="about">ABOUT</string>
+    <string name="adedigato">ADEDIGATO</string>
+    <string name="v1_2_0">v1.2.0</string>
+    <string name="sanri_2018_2019">© Sanri 2018-2019</string>
+    <string name="panel">panel</string>
+    <string name="aboutcontent">
+        "DAMIAN RIQUART - MATHIEU SANVICENTE
+Director, Lead Programmer GameDesigner
+
+DAMIAN RIQUART - MATHIEU SANVICENTE
+Music, SFX, Graphics
+
+DAMIAN RIQUART - MATHIEU SANVICENTE
+Additional Level Design,
+Marketing, PR
+
+DAMIAN RIQUART - MATHIEU SANVICENTE
+Consultancy, Marketing,
+Programming assistance
+
+SPECIAL THANKS :
+VINCENT FERRIES
+VERONIQUE SANVICENTE
+AMANDINE ROGER"
+    </string>
+    <string name="close_button">close button</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="easy">Easy</string>
+    <string name="normal">Normal</string>
+    <string name="hard">Hard</string>
+    <string name="previous_score">Previous score:</string>
+    <string name="personnal_best">Personnal best:</string>
+</resources>
